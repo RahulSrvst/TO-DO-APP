@@ -1,0 +1,127 @@
+/* Timer2.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f3e7e9, #e3eeff);
+  color: #333;
+}
+
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #6c63ff;
+}
+
+.timer-display {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.time-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #6c63ff;
+}
+
+.time-label {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: #555;
+}
+
+.separator {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #6c63ff;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.button.start {
+  background: #6c63ff;
+  color: #fff;
+}
+
+.button.stop {
+  background: #ff6b6b;
+  color: #fff;
+}
+
+.button.reset {
+  background: #4caf50;
+  color: #fff;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .time-value {
+    font-size: 2.5rem;
+  }
+
+  .timer-display {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .time-value {
+    font-size: 2rem;
+  }
+
+  .timer-display {
+    padding: 15px;
+  }
+}
